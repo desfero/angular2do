@@ -5,6 +5,7 @@ export interface ITodoAction {
   id?: number;
   name?: string;
   completed?: boolean;
+  filter?: string;
 }
 
 export function addTodo(name: string, id: number): ITodoAction {

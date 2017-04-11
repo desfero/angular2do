@@ -27,7 +27,7 @@ export function reducer(state: List<TodoModel> = List<TodoModel>(), action: ITod
         };
       });
     case TOGGLE:
-      return (<any>state).update(findIndexById(state, action), (todo) => {
+      return state.update(findIndexById(state, action), (todo) => {
         return {
           id: todo.id,
           name: todo.name,

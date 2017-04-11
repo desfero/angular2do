@@ -5,7 +5,7 @@ import { List } from 'immutable';
 import { todosApp } from './reducers/index';
 
 const enhancer = compose(
-  window.devToolsExtension && window.devToolsExtension()
+  window['devToolsExtension'] && window['devToolsExtension']()
 );
 
 export class TodoStore {
